@@ -1,0 +1,42 @@
+
+*** Running vivado
+    with args -log test.vds -m64 -mode batch -messageDb vivado.pb -notrace -source test.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source test.tcl -notrace
+Command: synth_design -top test -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16796 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 274.023 ; gain = 66.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test' [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/FSM_test.vhd:10]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: extra waveform elements [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/FSM_test.vhd:64]
+	Parameter file_name bound to: C:\Users\Javier\Documents\Embedded electronics\Introduction to structured VLSI design\Laboratorios\Laboratorio 1\Archivos\stimuli.txt - type: string 
+	Parameter width bound to: 12 - type: integer 
+	Parameter datadelay bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'FILE_READ' declared at 'C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/file_read.vhd:9' bound to instance 'TESTGEN' of component 'FILE_READ' [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/FSM_test.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'FILE_READ' [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/file_read.vhd:15]
+	Parameter file_name bound to: C:\Users\Javier\Documents\Embedded electronics\Introduction to structured VLSI design\Laboratorios\Laboratorio 1\Archivos\stimuli.txt - type: string 
+	Parameter width bound to: 12 - type: integer 
+	Parameter datadelay bound to: 1000000 - type: integer 
+ERROR: [Synth 8-5765] size mismatch in assignment; read failed [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/file_read.vhd:27]
+ERROR: [Synth 8-285] failed synthesizing module 'FILE_READ' [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/file_read.vhd:15]
+ERROR: [Synth 8-285] failed synthesizing module 'test' [C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Archivos/FSM_test.vhd:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 310.535 ; gain = 103.266
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+5 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 07 14:30:25 2016...

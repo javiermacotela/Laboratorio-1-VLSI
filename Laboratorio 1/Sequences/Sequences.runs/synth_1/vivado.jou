@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Sep 07 14:30:19 2016
+# Process ID: 19876
+# Current directory: C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Sequences/Sequences.runs/synth_1
+# Command line: vivado.exe -log test.vds -mode batch -messageDb vivado.pb -notrace -source test.tcl
+# Log file: C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Sequences/Sequences.runs/synth_1/test.vds
+# Journal file: C:/Users/Javier/Documents/Embedded electronics/Introduction to structured VLSI design/Laboratorios/Laboratorio 1/Sequences/Sequences.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test.tcl -notrace
